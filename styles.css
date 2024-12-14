@@ -1,0 +1,136 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f2f0;
+  line-height: 1.6;
+}
+
+/* Navegación con posición fixed */
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a2f1b;
+  color: white;
+  padding: 15px 50px;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.menu-items {
+  display: flex;
+  list-style: none;
+}
+
+.menu-items li {
+  margin-left: 20px;
+}
+
+.menu-items a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Contenedor principal con Flexbox */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px; /* Espacio para navegación fija */
+}
+
+/* Sección Hero con posicionamiento estático */
+.hero {
+  position: static;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #8d6e63;
+  color: white;
+  width: 100%;
+}
+
+/* Menú con Flexbox y Grid */
+.menu-section {
+  padding: 50px 20px;
+  width: 100%;
+}
+
+.menu-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu-item {
+  position: relative;
+  width: 250px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Etiqueta de menú con posición absoluta */
+.menu-item-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff6f00;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+.menu-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.price {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4a2f1b;
+}
+
+/* Sección Nosotros con posicionamiento sticky */
+.about-section {
+  position: sticky;
+  top: 60px;
+  background-color: #d7ccc8;
+  padding: 30px;
+  margin: 20px 0;
+  text-align: center;
+  z-index: 10;
+}
+
+/* Botón de pedido con posición fixed */
+.order-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 100;
+}
